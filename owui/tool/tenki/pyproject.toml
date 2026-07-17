@@ -17,6 +17,7 @@ maintainers = [{ name = "Yan Kuang", email = "YTKme@Outlook.com" }]
 
 dependencies = [
   "aiohttp[speedups]",
+  "pydantic",
 ]
 
 [dependency-groups]
