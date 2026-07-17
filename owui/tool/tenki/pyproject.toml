@@ -1,0 +1,41 @@
+[build-system]
+requires = ["uv_build>=0.11.17,<0.12"]
+build-backend = "uv_build"
+
+[project]
+name = "tenki"
+version = "0.0.1"
+description = "Tenki"
+keywords = ["tenki"]
+readme = "README.md"
+license = "PMT"
+license-files = ["LICEN[CS]E*"]
+requires-python = ">=3.11"
+
+authors = [{ name = "Yan Kuang", email = "YTKme@Outlook.com" }]
+maintainers = [{ name = "Yan Kuang", email = "YTKme@Outlook.com" }]
+
+dependencies = [
+  "aiohttp[speedups]",
+]
+
+[dependency-groups]
+develop = [
+  "ruff",
+  "ty",
+]
+test = [
+  "pytest>=9.0",
+  "pytest-asyncio",
+  "pytest-cov",
+  "pytest-mock",
+  "tox",
+]
+
+[project.urls]
+Homepage = "https://github.com/YTKme/artificial-intelligence"
+Repository = "https://github.com/YTKme/artificial-intelligence"
+"Bug Tracker" = "https://github.com/YTKme/artificial-intelligence/issues"
+
+[tool.uv]
+package = false
