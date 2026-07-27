@@ -11,4 +11,4 @@ deps = [
   "pytest-cov",
   "pytest-mock",
 ]
-commands = [["pytest", "test/", "-m", "mock"]]
+commands = [["pytest", "-m", "mock"]]

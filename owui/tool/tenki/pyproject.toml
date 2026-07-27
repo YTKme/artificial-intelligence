@@ -24,6 +24,7 @@ dependencies = [
 develop = [
   "ruff",
   "ty",
+  "tealogger",
 ]
 test = [
   "pytest>=9.0",
